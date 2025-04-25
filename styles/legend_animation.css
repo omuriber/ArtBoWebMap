@@ -1,0 +1,24 @@
+/* Animación de aparición para la leyenda */
+#legend {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s, transform 0.7s;
+}
+#legend.legend-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#legend:not(.legend-visible) {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+#show-legend {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s, transform 0.7s;
+}
+#show-legend.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
